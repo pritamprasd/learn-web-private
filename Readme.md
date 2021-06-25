@@ -18,3 +18,9 @@ Topics to be covered:
 - deploy them to ecs using Terraform
 - deploy them to minikube
 
+
+## Configuration:
+### UI:
+- runs on port : 3000
+### Backend:
+- runs on port : 5000
