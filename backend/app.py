@@ -1,10 +1,43 @@
+from flask_login import LoginManager
+from config import SECRET_KEY
 from flask import Flask
-from router import user_blueprint
+from authlib.integrations.flask_client import OAuth
+from router import user_blueprint, auth_blueprint
+from sqlite3 import OperationalError
+from models import init_db
+from models import User
+import logging
 
-app = Flask(__name__)
 
-app.register_blueprint(user_blueprint)
+login_manager = LoginManager()
+oauth = OAuth()
+
+@login_manager.user_loader
+def load_user(user_id):
+    return User.get(user_id)
+
+def initialize_db():
+    try:
+        init_db()
+    except Exception as e:
+        logging.error(f'{e}')
+
+
+def create_app():
+    app = Flask(__name__)
+       
+    app.register_blueprint(user_blueprint)
+    app.register_blueprint(auth_blueprint)
+    app.secret_key = SECRET_KEY
+
+    login_manager.init_app(app)
+    oauth.init_app(app, cache={})
+
+    initialize_db()
+    return app
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+    app = create_app()
+    # app.run(host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0", port=5000, ssl_context="adhoc")
