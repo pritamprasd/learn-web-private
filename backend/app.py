@@ -1,5 +1,5 @@
 from flask_login import LoginManager
-from config import SECRET_KEY
+from config import SECRET_KEY, HOST, PORT
 from flask import Flask
 from authlib.integrations.flask_client import OAuth
 from router import user_blueprint, auth_blueprint
@@ -25,7 +25,7 @@ def initialize_db():
 
 def create_app():
     app = Flask(__name__)
-       
+
     app.register_blueprint(user_blueprint)
     app.register_blueprint(auth_blueprint)
     app.secret_key = SECRET_KEY
@@ -40,4 +40,4 @@ def create_app():
 if __name__ == "__main__":
     app = create_app()
     # app.run(host="0.0.0.0", port=5000)
-    app.run(host="0.0.0.0", port=5000, ssl_context="adhoc")
+    app.run(host=HOST, port=PORT, ssl_context="adhoc")
