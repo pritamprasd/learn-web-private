@@ -18,12 +18,9 @@ def close_db(e=None):
 
 
 def init_db():
-    print("Hi.... 3")
     db = get_db()
-    print("Hi.... 4")
     with current_app.open_resource("schema.sql") as f:
         db.executescript(f.read().decode("utf8"))
-    print("Hi.... 5")
 
 
 def init_app(app):

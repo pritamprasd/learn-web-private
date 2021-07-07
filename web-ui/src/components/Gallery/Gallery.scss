@@ -1,0 +1,15 @@
+.galleryPage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "hd hd hd" ".  co . " ".  .  . ";
+}
+
+.galleryContainer {
+    display: grid;
+    grid-area: co;
+}
+
+.images {
+    height: 100%;
+    width: 100%;
+}

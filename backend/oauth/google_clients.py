@@ -40,7 +40,7 @@ def get_user_data():
     return userinfo_response
 
 
-def get_request_uri(self):
+def get_request_uri():
     authorization_endpoint = get_google_provider_cfg()["authorization_endpoint"]
     request_uri = g_client.prepare_request_uri(
         authorization_endpoint,

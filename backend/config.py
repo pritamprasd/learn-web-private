@@ -1,7 +1,11 @@
 import os
 from dotenv import load_dotenv
 
+
 load_dotenv()
+
+ENV=os.environ.get("ENV",'dev')
+
 
 HOST = os.environ.get("HOST", "0.0.0.0")
 PORT = os.environ.get("PORT", 5000)
@@ -13,4 +17,4 @@ GOOGLE_DISCOVERY_URL = "https://accounts.google.com/.well-known/openid-configura
 SECRET_KEY = os.environ.get("SECRET_KEY") or os.urandom(24)
 
 UI_HOST = "localhost"
-UI_HOME_URL = UI_HOST+ ":3000/"
+UI_HOME_URL = "http://"+UI_HOST+ ":3000/"

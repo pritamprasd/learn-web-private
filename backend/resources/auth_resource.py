@@ -13,11 +13,14 @@ from models import User
 class LoginResource(Resource):   
     @cross_origin()
     def get(self):
-        return redirect(get_request_uri())
+        return {
+            "redirect": get_request_uri()
+        }
 
 
 class LoginCallbackResource(Resource):
     def get(self):
+        print(f"{request}")
         code = request.args.get("code")
         get_token_with_auth_code(code)
         userinfo_response = get_user_data()
@@ -37,7 +40,8 @@ class LoginCallbackResource(Resource):
             User.create(unique_id, users_name, users_email, picture)
         login_user(user)
 
-        return redirect(url_for("index"))
+        return redirect(UI_HOME_URL, code=302, Response=None)
+        
 
 
 class LogoutResource(Resource):
