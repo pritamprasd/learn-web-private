@@ -13,4 +13,4 @@ jobs:
     steps:
         with:
           node-version: 14
-      - run: npm build
+            - run: npm build
