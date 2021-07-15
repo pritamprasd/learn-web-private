@@ -35,7 +35,7 @@ export default function YoutubeGallery() {
             </select>
             <div className="container">
                 {
-                    filteredChanels.map(channel => <ChannelTile key={channel.name} channel={channel}/>)
+                    filteredChanels.map(channel => <ChannelTile key={channel.name} channel={channel} updateTag={setSelectedTag}/>)
                 }
             </div>
         </div>
@@ -63,16 +63,20 @@ const ChannelTile = (props) => {
                 <a href={props.channel.link}>visit channel</a>
             </div>
             <div className="channel-tags">
-                {props.channel.tags.map(t => createTag(t))}
+                {props.channel.tags.map(t => <Tag name={t} updateTag={props.updateTag}/>)}
             </div>
         </div>
     )
 }
 
-function createTag(t) {
-    return getTag(tagToColorMap[t])
-
-    function getTag(color) {
-        return <div className="tag" ><font color={color}>{t}</font></div>
+const Tag = (props) => {
+    const[name, _] = useState(props.name)
+    function handleTagClick(){
+        props.updateTag(name)
     }
+    return(
+        <div className="tag" onClick={handleTagClick}>
+            <font color={tagToColorMap[name]}>{name}</font>
+        </div>
+    )
 }
