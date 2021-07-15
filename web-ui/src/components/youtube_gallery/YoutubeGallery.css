@@ -5,9 +5,10 @@
 
 body {
     background-color: rgb(57, 57, 62);
+    color: rgb(235, 182, 99);
 }
 
-a{
+a {
     color: rgb(219, 84, 75);
 }
 
@@ -33,7 +34,6 @@ a{
 
 .tile {
     background-color: rgb(31, 32, 37);
-    color: rgb(235, 182, 99);
     margin: auto 1rem;
     display: grid;
     padding: 1rem;
@@ -41,42 +41,40 @@ a{
     overflow: hidden;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "logo  logo  name name name"
-                         "tags  tags  desc desc desc"
-                         "link  link  why  why  why";
+    grid-template-areas: "logo  logo  name name name" "tags  tags  desc desc desc" "link  link  why  why  why";
 }
 
-.logo-image{
+.logo-image {
     grid-area: logo;
     display: grid;
     place-items: center;
 }
 
-.channel-logo{
+.channel-logo {
     border-radius: 50%
 }
 
-.channel-title{
+.channel-title {
     grid-area: name;
     font-weight: bold;
 }
 
-.channel-description{
+.channel-description {
     grid-area: desc;
     font-weight: lighter;
 }
 
-.channel-why{
+.channel-why {
     grid-area: why;
     font-weight: 300;
 }
 
-.channel-link{
+.channel-link {
     grid-area: link;
     font-weight: lighter;
 }
 
-.channel-tags{
+.channel-tags {
     grid-area: tags;
     display: grid;
     font-weight: lighter;
@@ -87,5 +85,4 @@ a{
     place-items: center;
 }
 
-.tag{
-}
+.tag {}
