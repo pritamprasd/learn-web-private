@@ -1,9 +1,18 @@
 .root {
     --text-color: rgb(0, 0, 0);
+    --primary-background: rgb(57, 57, 62);
+}
+
+body {
+    background-color: rgb(57, 57, 62);
+}
+
+a{
+    color: rgb(219, 84, 75);
 }
 
 .container {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(57, 57, 62);
     display: grid;
     max-width: 1200px;
     margin: 0 auto;
@@ -23,6 +32,58 @@
 }
 
 .tile {
-    background-color: rgb(145, 154, 157);
-    color: var(--text-color);
+    background-color: rgb(31, 32, 37);
+    color: rgb(235, 182, 99);
+    margin: auto 1rem;
+    display: grid;
+    /* min-width: 20rem;
+    min-height: 10rem; */
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "logo  logo  name name name"
+                         "tags  tags  desc desc desc"
+                         "link  link  why  why  why";
+}
+
+.logo-image{
+    grid-area: logo;
+    display: grid;
+    place-items: center;
+}
+
+.channel-logo{
+    border-radius: 50%
+}
+
+.channel-title{
+    grid-area: name;
+    font-weight: bold;
+}
+
+.channel-description{
+    grid-area: desc;
+    font-weight: lighter;
+}
+
+.channel-why{
+    grid-area: why;
+    font-weight: normal;
+}
+
+.channel-link{
+    grid-area: link;
+    font-weight: lighter;
+}
+.channel-tags{
+    grid-area: tags;
+    display: grid;
+    font-weight: lighter;
+}
+
+.tile * {
+    display: grid;
+    place-items: center;
+}
+
+.tag{
 }
