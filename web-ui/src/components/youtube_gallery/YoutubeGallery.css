@@ -46,6 +46,12 @@ a{
                          "link  link  why  why  why";
 }
 
+
+.logo-tile{
+    display: grid;
+    place-items: center;
+}
+
 .logo-image{
     grid-area: logo;
     display: grid;
@@ -58,7 +64,7 @@ a{
 
 .channel-title{
     grid-area: name;
-    font-weight: bold;
+    font-size: large;
 }
 
 .channel-description{
