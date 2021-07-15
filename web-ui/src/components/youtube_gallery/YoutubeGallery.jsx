@@ -1,26 +1,8 @@
 import { useEffect, useState } from 'react'
 import './YoutubeGallery.css'
 import ytchannels from "./ytchannels.json"
+import tagToColorMap from "./tags.json"
 
-
-const tagToColorMap = {
-    "science": "bacc13",
-    "math": "f94144",
-    "cryptography": "f3722c",
-    "animation": "f9844a",
-    "physics": "f9c74f",
-    "psychology": "90be6d",
-    "history": "43aa8b",
-    "human": "4d908e",
-    "stories": "577590",
-    "living": "277da1",
-    "travel": "f3722c",
-    "culture": "f3722c",
-    "world": "f3722c",
-    "biotech": "f3722c",
-    "tech": "ffcdb2",
-    "code": "e5989b",
-}
 
 export default function YoutubeGallery() {
 
