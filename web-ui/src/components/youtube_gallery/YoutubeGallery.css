@@ -1,0 +1,28 @@
+.root {
+    --text-color: rgb(0, 0, 0);
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-gap: 1rem;
+}
+
+@media (min-width: 600px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.tile {
+    background-color: rgb(145, 154, 157);
+    color: var(--text-color);
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import './LoginScreen.scss';
+import './LoginScreen.css';
 import do_login from './../../modules/backend_client'
 import { useScrollToTop } from '../utils/hooks';
 

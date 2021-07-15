@@ -1,0 +1,45 @@
+[{
+        "name": "3Blue1Brown",
+        "description": "3Blue1Brown, by Grant Sanderson, is some combination of math and entertainment, depending on your disposition",
+        "link": "https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw",
+        "logo": "https://yt3.ggpht.com/ytc/AKedOLRhzluRkOdLTBICxl1mTqE2CQDUAZdhwmEOTIsCmw=s88-c-k-c0x00ffffff-no-rj",
+        "tags": ["science", "math", "cryptography", "animation"],
+        "why": "Because of awesome visualization of hard math concepts",
+        "mode": "geek"
+    },
+    {
+        "name": "Kurzgesagt – In a Nutshell",
+        "description": " Videos explaining things with optimistic nihilism",
+        "link": "https://www.youtube.com/channel/UCsXVk37bltHxD1rDPwtNM8Q",
+        "logo": "https://yt3.ggpht.com/ytc/AKedOLRvMf1ZTTCnC5Wc0EGOVPyrdyvfvs20vtdTUxz_vQ=s88-c-k-c0x00ffffff-no-rj",
+        "tags": ["science", "physics", "psychology", "animation", "history"],
+        "why": "Because of awesome animation and the through research behind it.",
+        "mode": "normal"
+    },
+    {
+        "name": "Great Big Story",
+        "description": "Since our launch in late 2015, our producers have traveled to more than 100 countries to discover the untold, the overlooked and the flat-out amazing",
+        "link": "https://www.youtube.com/channel/UCajXeitgFL-rb5-gXI-aG8Q",
+        "logo": "https://yt3.ggpht.com/ytc/AKedOLSL3rMiRALp7x5Zb3AQdoSQVr_LM7d3UZbj7CixNg=s88-c-k-c0x00ffffff-no-rj",
+        "tags": [
+            "human",
+            "stories",
+            "living",
+            "travel",
+            "culture",
+            "history",
+            "world"
+        ],
+        "why": "Because of being super informative and entertaining in the same time, and they way i can learn about different cultures in a fun way.",
+        "mode": "normal"
+    },
+    {
+        "name": "Big Think",
+        "description": "Get actionable lessons from the world’s greatest thinkers & doers. Our experts are either disrupting or leading their respective fields",
+        "link": "https://www.youtube.com/channel/UCvQECJukTDE2i6aCoMnS-Vg",
+        "logo": "https://yt3.ggpht.com/ytc/AKedOLSXw8xzgPAinxvye1bcc9hbR8BOJIZAS7BKEP23Ag=s88-c-k-c0x00ffffff-no-rj",
+        "tags": ["science", "psychology", "biotech", "physics"],
+        "why": "I get to learn from top experts from each field",
+        "mode": "productive"
+    }
+]

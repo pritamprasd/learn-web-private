@@ -1,0 +1,59 @@
+.root {
+    --text-color: rgb(255, 255, 255);
+    --border-color: rgb(6, 138, 136);
+}
+
+.galleryPage {
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-gap: 1rem;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+}
+
+@media (min-width: 600px) {
+    .galleryPage {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .galleryPage {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.images {
+    height: 100%;
+    width: 100%;
+}
+
+.api-example {
+    background-color: rgb(228, 210, 210);
+    color: rgba(0, 39, 56);
+    height: 4rem;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 0px 6px 0 rgb(0, 129, 184, 0.2);
+}
+
+.api-example:hover {
+    box-shadow: 0 0px 16px 0 rgba(106, 183, 220, 0.75);
+}
+
+.api-example:hover .api-title {
+    color: orange;
+}
+
+#line {
+    stroke-dasharray: 2254;
+    stroke-dashoffset: 2254;
+    animation: animate-sign 5s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animate-sign {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
