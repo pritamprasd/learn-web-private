@@ -68,7 +68,7 @@ a{
 
 .channel-why{
     grid-area: why;
-    font-weight: normal;
+    font-weight: 300;
 }
 
 .channel-link{

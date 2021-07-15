@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react'
 import './YoutubeGallery.css'
 import ytchannels from "./ytchannels.json"
 
@@ -17,7 +16,7 @@ const ChannelTile = (props) => {
     return(
         <div className="tile">
             <div className="logo-image">
-                <img src={props.channel.logo} alt="logo" className="channel-logo"/>
+                <img height="100px" width="100px" src={props.channel.logo} alt="logo" className="channel-logo"/>
             </div>
             <div className="channel-title">
                 {props.channel.name}
@@ -54,6 +53,8 @@ function createTag(t) {
         "culture": "f3722c",
         "world": "f3722c",
         "biotech": "f3722c",
+        "tech": "ffcdb2",
+        "code": "e5989b",
     }
     return getTag(tagToColorMap[t])
 

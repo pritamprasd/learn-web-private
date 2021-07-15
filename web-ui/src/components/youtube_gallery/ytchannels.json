@@ -41,5 +41,23 @@
         "tags": ["science", "psychology", "biotech", "physics"],
         "why": "I get to learn from top experts from each field",
         "mode": "productive"
+    },
+    {
+        "name": "Fireship",
+        "description": "Get actionable lessons from the world’s greatest thinkers & doers. Our experts are either disrupting or leading their respective fields",
+        "link": "https://www.youtube.com/c/Fireship",
+        "logo": "https://yt3.ggpht.com/ytc/AKedOLTcIl6kKt3lEPJEySUf_hpHiKDKiFeo9eWPReLysQ=s176-c-k-c0x00ffffff-no-rj",
+        "tags": ["tech", "code"],
+        "why": "Awesome explanations realted to JS | frontend",
+        "mode": "productive"
+    },
+    {
+        "name": "Coding Tech",
+        "description": "Coding Tech partners with the tech conferences around the world that provided Coding Tech with their EXPLICIT permissions to republish videos on this channel ",
+        "link": "https://www.youtube.com/channel/UCtxCXg-UvSnTKPOzLH4wJaQ",
+        "logo": "https://yt3.ggpht.com/ytc/AKedOLSlrBJOA97k9yCSMwnknkCmaxBZJJV8C4KHjPezRw=s176-c-k-c0x00ffffff-no-rj",
+        "tags": ["tech", "code"],
+        "why": "Awesome collection of coding talks, meetups",
+        "mode": "productive"
     }
 ]
