@@ -13,7 +13,7 @@ function App() {
       <div className="Routes">
           <Route exact path="/home" component={HomeScreen} />
           <Route exact path="/">
-            <Redirect to="/gallery" />
+            <Redirect to="/yt" />
           </Route>
           <Route exact path="/login" component={LoginScreen} />
           <Route exact path="/gallery" component={Gallery} />

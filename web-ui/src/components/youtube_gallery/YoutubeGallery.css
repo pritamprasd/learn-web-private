@@ -17,6 +17,7 @@ a{
     max-width: 1200px;
     margin: 0 auto;
     grid-gap: 1rem;
+    padding: 4rem;
 }
 
 @media (min-width: 600px) {
@@ -38,6 +39,9 @@ a{
     display: grid;
     /* min-width: 20rem;
     min-height: 10rem; */
+    padding: 1rem;
+    height: 20rem;
+    overflow: hidden;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "logo  logo  name name name"
@@ -74,6 +78,7 @@ a{
     grid-area: link;
     font-weight: lighter;
 }
+
 .channel-tags{
     grid-area: tags;
     display: grid;
