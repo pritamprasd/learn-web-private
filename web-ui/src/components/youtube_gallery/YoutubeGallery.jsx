@@ -26,9 +26,7 @@ export default function YoutubeGallery() {
     <div>
       <label for="tags">Filter by tag: </label>
       <select name="tags" id="tags-select-id" onChange={handleOnTagSelect}>
-        <option value="all" selected>
-          all
-        </option>
+        <option value="all" selected>all</option>
         {Object.keys(tagToColorMap).map((tag) => (
           <option value={tag}>{tag}</option>
         ))}
@@ -87,7 +85,8 @@ const ChannelTile = (props) => {
 
 const Tag = (props) => {
   const [name, _] = useState(props.name);
-  function handleTagClick() {
+  function handleTagClick(e) {
+      e.stopPropagation();
     props.updateTag(name);
   }
   return (

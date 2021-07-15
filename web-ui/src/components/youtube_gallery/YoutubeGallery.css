@@ -34,7 +34,7 @@ a{
 
 .tile {
     background-color: rgb(31, 32, 37);
-    margin: auto 1rem;
+    margin: 1rem;
     display: grid;
     padding: 1rem;
     height: 20rem;
@@ -64,7 +64,8 @@ a{
 
 .channel-title{
     grid-area: name;
-    font-size: large;
+    font-size: x-large;
+    justify-content: center;
 }
 
 .channel-description{
