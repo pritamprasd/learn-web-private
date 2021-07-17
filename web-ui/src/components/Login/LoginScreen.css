@@ -15,6 +15,6 @@
 }
 
 .login-button:active {
-    background-color: red;
+    background-color: rgb(186, 204, 19);
     color: dodgerblue;
 }

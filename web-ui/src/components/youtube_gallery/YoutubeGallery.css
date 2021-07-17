@@ -1,6 +1,6 @@
-.root {
+:root {
     --text-color: rgb(0, 0, 0);
-    --primary-background: rgb(57, 57, 62);
+    --primary-background: rgb(31, 32, 37);;
 }
 
 body {
@@ -33,17 +33,30 @@ a{
 }
 
 .tile {
-    background-color: rgb(31, 32, 37);
+    background-color: var(--primary-background);
     margin: 1rem;
     display: grid;
-    padding: 1rem;
+    padding: 0.5rem;
     height: 20rem;
     overflow: hidden;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "logo  logo  name name name"
+    grid-template-rows: 0.3fr repeat(3, 1fr);
+    grid-template-areas: "head  head  head head mini"
+                         "logo  logo  name name name"
                          "tags  tags  desc desc desc"
                          "link  link  why  why  why";
+}
+
+.minimised-tile{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: ".    logo ."
+                         "name name name"
+                         "tags tags maxi";
+    background-color: var(--primary-background);
+    width: 200px;
+    height: 200px;
 }
 
 
@@ -97,4 +110,40 @@ a{
 
 .tag:hover{
     cursor: pointer;
+}
+
+.minimize-button{
+    grid-area: mini;
+    width: 50%;
+}
+
+.maximize-button{
+    grid-area: maxi;
+    width: 50%;
+    padding: 1rem;
+}
+
+.min-channel-logo{
+    grid-area: logo;
+    border-radius: 50%;
+    padding: 0.3rem;
+}
+
+.mchannel-title{
+    grid-area: name;
+    display: grid;
+    place-items: center;
+}
+
+.mchannel-tags{
+    grid-area: tags;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: x-small;
+    font-weight: lighter;
+    padding: 0.3rem;
+}
+
+.toggle-all-button{
+    
 }
