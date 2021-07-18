@@ -23,6 +23,19 @@
     }
 }
 
+.back-button {
+    background: transparent;
+    border: none;
+}
+
+.back-button:hover #back-button-svg {
+    stroke: orange;
+}
+
+#back-button-svg {
+    stroke: white;
+}
+
 .images {
     height: 100%;
     width: 100%;

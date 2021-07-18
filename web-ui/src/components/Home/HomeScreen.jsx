@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import get_data from './../../modules/backend_client'
-import call_logout from '../../modules/backend_client'
+import get_data from './../utils/backend_client'
+import call_logout from '../utils/backend_client'
 import { Redirect } from 'react-router-dom'
 
 export default function HomeScreen() {

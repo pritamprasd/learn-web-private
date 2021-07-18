@@ -103,7 +103,7 @@ const ChannelTile = (props) => {
 };
 
 const Tag = (props) => {
-  const [name, _] = useState(props.name);
+  const [name, ] = useState(props.name);
   function handleTagClick(e) {
     e.stopPropagation();
     props.updateTag(name);

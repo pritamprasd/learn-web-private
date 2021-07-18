@@ -1,0 +1,43 @@
+[{
+        "id": 1,
+        "title": "Geolocation API",
+        "description": [
+            "Display geolocation info as text",
+            "Show a plotted map with coordinates"
+        ],
+        "logourl": "../../assets/img/geolocation.png"
+    },
+    {
+        "id": 2,
+        "title": "Bluetooth API",
+        "description": [
+            "View paired devices info as list",
+            "Connect to soundbar and play music."
+        ],
+        "logourl": "../../assets/img/bluetooth.png"
+    },
+    {
+        "id": 3,
+        "title": "Barcode Detection API",
+        "description": [
+            "Read barcodes and display"
+        ],
+        "logourl": "../../assets/img/barcode.png"
+    },
+    {
+        "id": 4,
+        "title": "File System Access API",
+        "description": [
+            "Read a text file and view it."
+        ],
+        "logourl": "../../assets/img/file.png"
+    },
+    {
+        "id": 5,
+        "title": "Contact Picker API",
+        "description": [
+            "Read a bunch of contacts and view on page 😕"
+        ],
+        "logourl": "../../assets/img/contacts.png"
+    }
+]
