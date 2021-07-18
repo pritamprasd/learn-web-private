@@ -52,7 +52,7 @@ const ChannelTile = (props) => {
     (!clicked && !isminimised && (
       <div className="tile" onClick={() => setClicked(true)}>
         <svg onClick={(e) => {e.stopPropagation(); setMinimised(true);}} className="minimize-button" width="70" height="38" viewBox="0 0 70 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3 35.5L33.5 4L67 35.5" stroke="white" stroke-width="5" stroke-linecap="round"/>
+            <path d="M3 35.5L33.5 4L67 35.5" stroke="white" strokeWidth="5" stroke-linecap="round"/>
         </svg>
         <div className="logo-image">
           <img height="84px" width="84px" src={props.channel.logo}
@@ -86,7 +86,7 @@ const ChannelTile = (props) => {
             </div>
             <svg onClick={(e) => {e.stopPropagation(); setMinimised(false);}} 
                 className="maximize-button" width="70" height="38" viewBox="0 0 70 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M67 3L36.5 34.5L3 3" stroke="white" stroke-width="5" stroke-linecap="round"/>
+                <path d="M67 3L36.5 34.5L3 3" stroke="white" strokeWidth="5" stroke-linecap="round"/>
             </svg>
         </div>)
     ) ||

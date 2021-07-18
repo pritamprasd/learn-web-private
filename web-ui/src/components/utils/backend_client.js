@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const BACKEND_HOST = "http://localhost:5000";
 
 const get_url = (path) => {

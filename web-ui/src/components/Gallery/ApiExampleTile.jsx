@@ -5,6 +5,7 @@ export default function ApiExampleTile(props) {
     const [apiId, setApiId] = useState(props.id);
     function navigateToPage(){
         console.log('Navigating to page: '+ apiId)
+        setApiId(apiId);
         props.setApiPageId(apiId)
     }
     return (

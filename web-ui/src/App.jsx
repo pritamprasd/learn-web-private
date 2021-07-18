@@ -12,8 +12,8 @@ function App() {
       <BrowserRouter>
       <div className="Routes">
           <Route exact path="/home" component={HomeScreen} />
-          <Route exact path="/">
-            <Redirect to="/gallery" />
+          <Route exact path="/" component={Gallery}>
+            {/* <Redirect to="/gallery" /> */}
           </Route>
           <Route exact path="/login" component={LoginScreen} />
           <Route exact path="/gallery" component={Gallery} />

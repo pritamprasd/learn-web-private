@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react'
 
 
@@ -36,6 +35,7 @@ export default function ContactsApi() {
         .catch(err => {
             console.error(err)
         })
+           // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return (

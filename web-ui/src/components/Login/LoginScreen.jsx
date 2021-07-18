@@ -1,7 +1,6 @@
 import React from 'react';
 import './LoginScreen.css';
 import do_login from './../utils/backend_client'
-import { useScrollToTop } from '../utils/hooks';
 
 export default function LoginScreen() {
     const handleLogin = () => {

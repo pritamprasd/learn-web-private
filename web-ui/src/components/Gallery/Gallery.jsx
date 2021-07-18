@@ -50,6 +50,7 @@ export default function Gallery() {
               description={page.description}
               logourl={page.logourl}
               setApiPageId={setApiPageId}
+              key={page.id}
             />
           ))}
       </div>
