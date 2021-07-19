@@ -18,3 +18,4 @@ rm -rf build && npm run build && cd build && zip -r site.zip . && cd ..
 
 ## links
 - https://www.react-simple-maps.io
+- icons: https://react-icons.github.io/react-icons/icons

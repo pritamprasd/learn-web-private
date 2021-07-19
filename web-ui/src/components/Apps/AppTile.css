@@ -1,16 +1,31 @@
-h3 {
+.title {
     padding: 1rem;
+    grid-area: name;
+    font-weight: lighter;
+    font-size: large;
+    color: rgb(255, 45, 108);
+}
+
+.icon {
+    width: 12rem;
+    grid-area: logo
 }
 
 .app-tile {
+    background-color: rgb(70, 70, 70);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "name link" "logo link";
     padding: 1rem;
-    box-shadow: 8px 2px 16px white;
+    /* border: 4px solid rgb(36, 175, 255); */
+    border-radius: 16px;
 }
 
 .forward-button {
     background: transparent;
     border: none;
     cursor: pointer;
+    stroke: rgb(21, 163, 182);
+    grid-area: link;
 }
