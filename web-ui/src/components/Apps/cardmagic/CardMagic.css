@@ -1,0 +1,25 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.cardinput {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+select {
+    height: 2rem;
+}
+
+.info {
+    font-weight: bolder;
+    padding: 8px;
+    color: orange;
+}
+
+.fifth-card {
+    color: greenyellow;
+    font-size: xxx-large;
+}

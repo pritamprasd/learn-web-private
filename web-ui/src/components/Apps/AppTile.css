@@ -1,0 +1,16 @@
+h3 {
+    padding: 1rem;
+}
+
+.app-tile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+    box-shadow: 8px 2px 16px white;
+}
+
+.forward-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}

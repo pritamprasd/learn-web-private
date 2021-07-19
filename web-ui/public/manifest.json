@@ -1,6 +1,7 @@
 {
     "short_name": "PP",
     "name": "Kuch Bhi Experiments",
+    "description": "some experiments",
     "icons": [{
         "src": "/images/logo.png",
         "type": "image/png",

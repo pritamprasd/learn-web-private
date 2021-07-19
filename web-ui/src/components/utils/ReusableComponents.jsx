@@ -9,4 +9,12 @@ function backButton(){
     )
 }
 
-export default backButton;
+function forwardButton(){
+    return(
+        <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path id="forward-button" d="M0 24.8471H48M48 24.8471L26.7352 49M48 24.8471L26.7352 1" stroke="black" stroke-width="3"/>
+        </svg>
+    )
+}
+
+export {backButton, forwardButton}

@@ -4,7 +4,7 @@ import ApiExampleTile from "./ApiExampleTile";
 import GeolocationApi from "./ApiPages/geolocation/GeolocationApi";
 import ContactsApi from "./ApiPages/contacts/ContactsApi";
 import pages from "./pages.json";
-import backButton from "../utils/ReusableComponents";
+import { backButton } from "../utils/ReusableComponents";
 import BluetoothApi from "./ApiPages/bluetooth/BluetoothApi";
 import BarcodeApi from "./ApiPages/barcode/BarcodeApi";
 
