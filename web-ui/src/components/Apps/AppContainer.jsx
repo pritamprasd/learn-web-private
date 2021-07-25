@@ -4,6 +4,7 @@ import AppTile from "./AppTile";
 import WeatherApi from "./weather/WeatherApi";
 import { backButton } from "../utils/ReusableComponents";
 import CardMagic from "./cardmagic/CardMagic";
+import GithubCard from "./githubcard/GithubCard";
 
 export default function AppContainer() {
   const [currentApp, setCurrentApp] = useState();
@@ -11,6 +12,7 @@ export default function AppContainer() {
   const apps = [
     { name: "Weather App", app: <WeatherApi /> },
     { name: "Card magic", app: <CardMagic /> },
+    { name: "Github Card", app: <GithubCard /> },
   ];
 
   return (
